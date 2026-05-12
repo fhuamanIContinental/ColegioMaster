@@ -1,0 +1,48 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.rsuser
+*.sln.docstates
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# .NET tool and local config
+.dotnet/
+
+# ASP.NET Core
+appsettings.Development.json
+
+# Generated files
+Generated/
+
+# Node modules (for Angular frontend)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db

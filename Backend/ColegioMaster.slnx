@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/01 api/">
+    <Project Path="01 api/ColegioMaster.Api/ColegioMaster.Api.csproj" />
+  </Folder>
+  <Folder Name="/03 infrastructure/">
+    <Project Path="03 infrastructure/ColegioMaster.Infrastructure/ColegioMaster.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/02 application/">
+    <Project Path="02 application/ColegioMaster.Application/ColegioMaster.Application.csproj" />
+  </Folder>
+</Solution>
