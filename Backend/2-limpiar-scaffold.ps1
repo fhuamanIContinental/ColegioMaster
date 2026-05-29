@@ -1,4 +1,4 @@
-$infraPath     = "d:\GHB\Curso\master\Backend\ColegioMaster\03 infrastructure\ColegioMaster.Infrastructure"
+$infraPath     = "D:\IC\2026-1\ColegioMaster\Backend\03 infrastructure\ColegioMaster.Infrastructure"
 $dbContextPath = "$infraPath\ColegioDbContext.cs"
 $configDir     = "$infraPath\Configurations"
 $namespace     = "ColegioMaster.Infrastructure"

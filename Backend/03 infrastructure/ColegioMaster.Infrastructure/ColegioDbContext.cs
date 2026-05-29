@@ -16,17 +16,21 @@ public partial class ColegioDbContext : DbContext
     {
     }
 
-    public virtual DbSet<Cliente> Clientes { get; set; }
+    public virtual DbSet<Cliente> Cliente { get; set; }
 
-    public virtual DbSet<ClienteSuscripcion> ClienteSuscripcions { get; set; }
+    public virtual DbSet<ClienteSuscripcion> ClienteSuscripcion { get; set; }
 
-    public virtual DbSet<EstadoCliente> EstadoClientes { get; set; }
+    public virtual DbSet<EstadoCliente> EstadoCliente { get; set; }
 
-    public virtual DbSet<EstadoSuscripcion> EstadoSuscripcions { get; set; }
+    public virtual DbSet<EstadoSuscripcion> EstadoSuscripcion { get; set; }
 
-    public virtual DbSet<Plan> Plans { get; set; }
+    public virtual DbSet<Mascota> Mascota { get; set; }
 
-    public virtual DbSet<UsuarioPlataforma> UsuarioPlataformas { get; set; }
+    public virtual DbSet<Persona> Persona { get; set; }
+
+    public virtual DbSet<Plan> Plan { get; set; }
+
+    public virtual DbSet<UsuarioPlataforma> UsuarioPlataforma { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

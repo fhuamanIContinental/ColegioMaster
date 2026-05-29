@@ -40,17 +40,17 @@ public class ClienteSuscripcionConfiguration : IEntityTypeConfiguration<ClienteS
                 .HasMaxLength(100)
                 .HasColumnName("usuario_modificacion");
 
-            entity.HasOne(d => d.IdClienteNavigation).WithMany(p => p.ClienteSuscripcions)
+            entity.HasOne(d => d.IdClienteNavigation).WithMany(p => p.ClienteSuscripcion)
                 .HasForeignKey(d => d.IdCliente)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_ClienteSuscripcion_Cliente");
 
-            entity.HasOne(d => d.IdEstadoNavigation).WithMany(p => p.ClienteSuscripcions)
+            entity.HasOne(d => d.IdEstadoNavigation).WithMany(p => p.ClienteSuscripcion)
                 .HasForeignKey(d => d.IdEstado)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_ClienteSuscripcion_EstadoSuscripcion");
 
-            entity.HasOne(d => d.IdPlanNavigation).WithMany(p => p.ClienteSuscripcions)
+            entity.HasOne(d => d.IdPlanNavigation).WithMany(p => p.ClienteSuscripcion)
                 .HasForeignKey(d => d.IdPlan)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_ClienteSuscripcion_Plan");

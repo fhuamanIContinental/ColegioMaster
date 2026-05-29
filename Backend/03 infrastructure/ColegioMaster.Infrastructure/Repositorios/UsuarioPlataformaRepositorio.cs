@@ -15,13 +15,13 @@ public class UsuarioPlataformaRepositorio : IUsuarioPlataformaRepositorio
 
     public async Task<UsuarioPlataforma?> ObtenerPorNombreUsuarioAsync(string nombreUsuario)
     {
-        return await dbContext.UsuarioPlataformas
+        return await dbContext.UsuarioPlataforma
             .FirstOrDefaultAsync(x => x.Correo == nombreUsuario);
     }
 
     public async Task ActualizarAsync(UsuarioPlataforma usuario)
     {
-        dbContext.UsuarioPlataformas.Update(usuario);
+        dbContext.UsuarioPlataforma.Update(usuario);
         await dbContext.SaveChangesAsync();
     }
 }

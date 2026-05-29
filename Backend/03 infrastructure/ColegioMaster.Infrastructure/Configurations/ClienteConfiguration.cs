@@ -72,7 +72,7 @@ public class ClienteConfiguration : IEntityTypeConfiguration<Cliente>
                 .HasMaxLength(100)
                 .HasColumnName("usuario_modificacion");
 
-            entity.HasOne(d => d.IdEstadoNavigation).WithMany(p => p.Clientes)
+            entity.HasOne(d => d.IdEstadoNavigation).WithMany(p => p.Cliente)
                 .HasForeignKey(d => d.IdEstado)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Cliente_EstadoCliente");

@@ -11,5 +11,5 @@ public partial class EstadoCliente
 
     public string Descripcion { get; set; } = null!;
 
-    public virtual ICollection<Cliente> Clientes { get; set; } = new List<Cliente>();
+    public virtual ICollection<Cliente> Cliente { get; set; } = new List<Cliente>();
 }

@@ -1,12 +1,13 @@
 $connectionString = 'Data Source=localhost;Initial Catalog=master_colegio;Persist Security Info=True;User ID=sa;Password=P@ssw0rd123!;Trust Server Certificate=True'
-$apiPath   = "d:\GHB\Curso\master\Backend\ColegioMaster\01 api\ColegioMaster.Api"
-$infraPath = "d:\GHB\Curso\master\Backend\ColegioMaster\03 infrastructure\ColegioMaster.Infrastructure"
+$apiPath   = "D:\IC\2026-1\ColegioMaster\Backend\01 api\ColegioMaster.Api"
+$infraPath = "D:\IC\2026-1\ColegioMaster\Backend\03 infrastructure\ColegioMaster.Infrastructure"
 
 Write-Host "[1/1] Generando modelos desde la base de datos..." -ForegroundColor Cyan
 Set-Location $apiPath
 
 dotnet ef dbcontext scaffold $connectionString Microsoft.EntityFrameworkCore.SqlServer `
     -o "$infraPath\Models" `
+    --no-pluralize `
     --context-dir "$infraPath" `
     --context ColegioDbContext `
     --project "$infraPath\ColegioMaster.Infrastructure.csproj" `

@@ -41,7 +41,7 @@ public partial class Cliente
 
     public string? UsuarioModificacion { get; set; }
 
-    public virtual ICollection<ClienteSuscripcion> ClienteSuscripcions { get; set; } = new List<ClienteSuscripcion>();
+    public virtual ICollection<ClienteSuscripcion> ClienteSuscripcion { get; set; } = new List<ClienteSuscripcion>();
 
     public virtual EstadoCliente IdEstadoNavigation { get; set; } = null!;
 }

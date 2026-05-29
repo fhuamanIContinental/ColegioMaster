@@ -11,5 +11,5 @@ public partial class EstadoSuscripcion
 
     public string Descripcion { get; set; } = null!;
 
-    public virtual ICollection<ClienteSuscripcion> ClienteSuscripcions { get; set; } = new List<ClienteSuscripcion>();
+    public virtual ICollection<ClienteSuscripcion> ClienteSuscripcion { get; set; } = new List<ClienteSuscripcion>();
 }
