@@ -132,3 +132,32 @@ CREATE TABLE dbo.cliente_suscripcion (
     CONSTRAINT CK_ClienteSuscripcion_Monto CHECK (monto_pactado >= 0)
 );
 GO
+
+CREATE TABLE Persona
+(
+	id int identity primary key,
+	tipo_documento varchar(50),
+	numero_documento varchar(50),
+	nombres varchar(50),
+	apellido_paterno varchar(50),
+	apellido_materno varchar(50),
+	fecha_creacion DATETIME2(0) NOT NULL CONSTRAINT DF_Persona_FechaCreacion DEFAULT (SYSUTCDATETIME()),
+    fecha_modificacion DATETIME2(0) NULL,
+    usuario_creacion NVARCHAR(100) NOT NULL,
+    usuario_modificacion NVARCHAR(100) NULL,
+)
+GO
+
+CREATE TABLE Mascota
+(
+	id int identity primary key,
+	categoria_mascota varchar(50),
+	raza varchar(50),
+	edad int,
+	nombre varchar(50),
+	fecha_creacion DATETIME2(0) NOT NULL CONSTRAINT DF_Mascota_FechaCreacion DEFAULT (SYSUTCDATETIME()),
+    fecha_modificacion DATETIME2(0) NULL,
+    usuario_creacion NVARCHAR(100) NOT NULL,
+    usuario_modificacion NVARCHAR(100) NULL,
+)
+GO

@@ -18,6 +18,7 @@ public static class ConfiguracionDependenciasExtensions
         services.AddScoped<IEstadoSuscripcionService, EstadoSuscripcionService>();
         services.AddScoped<IPlanService, PlanService>();
         services.AddScoped<IUsuarioPlataformaService, UsuarioPlataformaService>();
+        services.AddScoped<IPersonaService, PersonaService>();
 
         services.AddScoped<IUsuarioPlataformaRepositorio, UsuarioPlataformaRepositorio>();
         services.AddScoped<IAutenticacionService, AutenticacionService>();
